@@ -81,6 +81,7 @@ nav a {
   height: 100%;
   object-fit: cover; /* remplit la section sans déformation */
   z-index: -1; /* passe derrière le texte */
+  animation: bgmov 25s ease-in-out infinite alternate;
 }
 
 .produits h2 {
@@ -100,6 +101,7 @@ nav a {
   border-radius: 10px;
   padding: 15px;
   width: 200px;
+  height: auto;
 }
 
 .produit img {
@@ -108,6 +110,7 @@ nav a {
 }
 
 .video-promo {
+  text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -139,9 +142,29 @@ footer {
   font-size: 0.9rem;
 }
 
-
 .nanav {
   font-weight: bold;
   text-decoration: underline;
   color: #ffffff
+}
+
+@keyframes bgmov {
+  from {
+    transform: scale(1.2) translateX(-5%);
+  } 
+  to {
+    transform: scale(1.2) translateX(5%)
+  }
+}
+
+@media (max-width:600px) {
+  .grid {
+    max-height: 40vh;
+    overflow-y: auto;
+    scrollbar-width: none;
+
+    .produit {
+      width: 75%;
+    }
+  }
 }
