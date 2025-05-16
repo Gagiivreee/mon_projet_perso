@@ -36,6 +36,17 @@ nav a:hover {
   background-color:#cc323277
 }
 
+fieldset {
+  border: 1px solid #ccc;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+
+legend {
+  font-weight: bold;
+  padding: 0 10px;
+}
+
 .hero {
   background: url('https://via.placeholder.com/1200x400') no-repeat center center/cover;
   padding: 100px 20px;
@@ -88,6 +99,32 @@ nav a:hover {
   animation: bgmov 25s ease-in-out infinite alternate;
 }
 
+.formulaire {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.fform {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.fform label {
+  width: 200px; /* À ajuster selon tes besoins */
+  font-weight: bold;
+}
+
+.fform input {
+  flex: 1;
+  padding: 2px;
+}
+
+.submit-button {
+  text-align: center;
+}
+
 .produits h2 {
   margin-bottom: 30px;
   font-size: 2rem;
@@ -135,6 +172,12 @@ nav a:hover {
   width: 100%;
   max-width: 50%;
   margin-top: 15px;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 .meteo {
